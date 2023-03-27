@@ -38,3 +38,14 @@ set global variable
 | ------------- |:-------------:|
 | base_url      | http://localhost:8080 |
 | token      | xxxx      |
+
+## Additional
+Create local redis
+```
+docker run -p 6379:6379 -d redis
+```
+Create local mongodb
+mongodb://docker:mongopw@localhost:2701
+```
+docker run -p 2701:2701 -d -e MONGO_INITDB_ROOT_USERNAME=docker -e MONGO_INITDB_ROOT_PASSWORD=mongopw mongo
+```
