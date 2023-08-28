@@ -44,6 +44,7 @@ Create local redis
 ```
 docker pull redis
 docker run -p 6379:6379 -d redis
+docker run --name redis -d -p 6379:6379 redis redis-server --requirepass "SUPER_SECRET_PASSWORD"
 ```
 Create local mongodb
 mongodb://docker:mongopw@localhost:2701
