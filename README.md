@@ -55,5 +55,5 @@ docker run -p 2701:2701 -d -e MONGO_INITDB_ROOT_USERNAME=docker -e MONGO_INITDB_
 ```
 
 ```
-docker run -d \ --name postgres-container \ -e POSTGRES_USER=YOUR_USERNAME \ -e POSTGRES_PASSWORD=YOUR_PASSWORD \ -p YOUR_LOCAL_PORT:5432 \ postgres:latest
+docker run -d --name postgres-container -e POSTGRES_USER=YOUR_USERNAME -e POSTGRES_PASSWORD=YOUR_PASSWORD -p 5432:5432 postgres:latest
 ```
