@@ -48,16 +48,12 @@ docker run --name redis -d -p 6379:6379 redis redis-server --requirepass "SUPER_
 ```
 Create local mongodb
 mongodb://docker:mongopw@localhost:2701
-```
-```
-docker run -d \
-  --name postgres-container \
-  -e POSTGRES_USER=YOUR_USERNAME \
-  -e POSTGRES_PASSWORD=YOUR_PASSWORD \
-  -p YOUR_LOCAL_PORT:5432 \
-  postgres:latest
 
 ```
 docker pull mongo
 docker run -p 2701:2701 -d -e MONGO_INITDB_ROOT_USERNAME=docker -e MONGO_INITDB_ROOT_PASSWORD=mongopw mongo
+```
+
+```
+docker run -d \ --name postgres-container \ -e POSTGRES_USER=YOUR_USERNAME \ -e POSTGRES_PASSWORD=YOUR_PASSWORD \ -p YOUR_LOCAL_PORT:5432 \ postgres:latest
 ```
