@@ -51,7 +51,7 @@ mongodb://docker:mongopw@localhost:2701
 
 ```
 docker pull mongo
-docker run -p 2701:2701 -d -e MONGO_INITDB_ROOT_USERNAME=docker -e MONGO_INITDB_ROOT_PASSWORD=mongopw mongo
+docker run -p 27017:27017 -d -e MONGO_INITDB_ROOT_USERNAME=docker -e MONGO_INITDB_ROOT_PASSWORD=mongopw mongo
 ```
 
 ```
